@@ -1,0 +1,27 @@
+Project: Customer Churn Prediction Web Application
+
+Starting Point: I began this project with the goal of creating a web application that predicts customer churn. This involved several key steps:
+
+Data Collection:
+
+I started by collecting data containing information about customers, including age, gender, location, subscription length, monthly bill, total usage, and whether they had churned.
+Data Preprocessing:
+
+Next, I had to clean and preprocess the data. This included handling missing values and ensuring the data was in a suitable format for training my machine learning model.
+Feature Engineering:
+
+To improve the model's accuracy, I performed feature engineering. This involved one-hot encoding for categorical variables like gender and location and feature scaling for numerical variables.
+Model Training with K-Fold Cross-Validation:
+
+Before training the model, I introduced k-fold cross-validation. This technique allowed me to divide the data into 'k' subsets and train the model 'k' times, each time using a different subset for validation and the rest for training. This helped ensure that the model generalizes well and reduces overfitting.
+Model Training:
+
+With the preprocessed data and cross-validation in place, I chose the XGBoost classifier as my model and trained it. This meant splitting the data into training and testing sets within each fold and fitting the model to the training data.
+Model Evaluation:
+
+To assess the model's performance, I used metrics such as accuracy, the confusion matrix, and a classification report. These helped me understand how well the model could predict customer churn.
+Streamlit Integration:
+
+
+I also integrated my model into a Flask web application, offering both online and batch prediction capabilities.
+Deployment:
